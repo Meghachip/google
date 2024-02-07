@@ -17,8 +17,8 @@ public class LoginTest {
 	
 	@BeforeMethod
 	public void setup() {
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 	}
 	
 	
