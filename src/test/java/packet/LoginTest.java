@@ -1,6 +1,7 @@
 package packet;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
@@ -24,6 +25,7 @@ public class LoginTest {
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		driver.findElement(By.name("q")).sendKeys("Jenkins");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a")).click();
 		
 	}
