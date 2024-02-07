@@ -29,6 +29,7 @@ public class LoginTest {
 		driver.findElement(By.xpath("//*[@id=\"menu-item-27625\"]")).click();
 		driver.findElement(By.name("email")).sendKeys("meghachip@gmail.com");
 		driver.findElement(By.name("password")).sendKeys("Changeme#23");
+		driver.findElement(By.xpath("/html/body/main/div/form/div[4]/input")).click();
 		
 	}
 
