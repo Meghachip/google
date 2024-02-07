@@ -24,6 +24,7 @@ public class LoginTest {
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		driver.findElement(By.name("q")).sendKeys("Jenkins");
+		driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a")).click();
 		
 	}
 
